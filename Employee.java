@@ -93,7 +93,7 @@ package CRUD;
 				      System.out.println(st); 
 			}
 			catch (IOException e) {
-				// TODO Auto-generated catch block
+			
 				e.printStackTrace();
 			}
 			return path1;
@@ -107,13 +107,13 @@ package CRUD;
 		}
 
 		public String Search() {
-			 //error
+			
 		 try {
 		    	  BufferedReader br = new BufferedReader(new FileReader("C:/Users/aiswarja.saha/Desktop/File/Record.txt")); 
 		 		 String s;
 		 		 String[] words=null;
 		 		 String search="Joye";
-		 		 int count=0;   //Intialize the word to zero
+		 		 int count=0;  
 				while(( s=br.readLine())!=null)   //Reading Content from the file
 				  {
 				     words=s.split(" ");  //Split the word using space
@@ -121,7 +121,7 @@ package CRUD;
 				      {
 				             if (word.equals(search))   //Search for the given word
 				             {
-				               count++;    //If Present increase the count by one
+				               count++;   
 				             }
 				      }
 				                                         }
@@ -134,7 +134,7 @@ package CRUD;
 			    	  System.out.println("Not Present");
 			      }
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			}
 				return null;
